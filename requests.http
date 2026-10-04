@@ -1,0 +1,45 @@
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "",
+  "salary": -5000,
+  "departmentId": 1
+}
+###
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Test Employee",
+  "salary": 50000
+}
+###
+GET http://localhost:8080/employees/search?name=Rahul
+###
+GET http://localhost:8080/employees/search/salary?salary=60000
+###
+GET http://localhost:8080/employees/search/department?departmentId=2
+###
+GET http://localhost:8080/employees/search/name?name=ah
+###
+GET http://localhost:8080/employees/sorted/salary
+###
+GET http://localhost:8080/employees/page?page=0&size=2
+###
+GET http://localhost:8080/employees/1
+###
+GET http://localhost:8080/employees/999
+###
+GET http://localhost:8080/departments/999
+###
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "",
+  "salary": -5000,
+  "departmentId": 1
+}
+###
+GET http://localhost:8080/employees
