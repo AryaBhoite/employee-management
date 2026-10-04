@@ -17,4 +17,6 @@ public interface EmployeeRepository
     List<Employee> findByNameContaining(String name);
 
     List<Employee> findAllByOrderBySalaryDesc();
+
+    List<Employee> findBySalaryLessThan(int salary);
 }
